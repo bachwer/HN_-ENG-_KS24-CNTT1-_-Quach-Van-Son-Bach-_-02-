@@ -198,6 +198,9 @@ void PRINT(const Stack *draw) {
 }
 
 void undo(Stack * drawStack, Stack * redo){
+     if (redo -> drawStack == NULL) {
+        printf("Is empty\n");
+    }
 
     const draw temp = pop(drawStack);
 
