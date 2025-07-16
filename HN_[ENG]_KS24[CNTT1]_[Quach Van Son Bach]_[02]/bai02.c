@@ -198,7 +198,7 @@ void PRINT(const Stack *draw) {
 }
 
 void undo(Stack * drawStack, Stack * redo){
-     if (redo -> drawStack == NULL) {
+     if (drawStack -> top == NULL) {
         printf("Is empty\n");
     }
 
